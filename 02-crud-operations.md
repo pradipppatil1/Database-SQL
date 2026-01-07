@@ -246,7 +246,7 @@ SELECT * FROM film WHERE rating <> 'PG-13';
 
 # IN Operator
 
-With comparison operators, we can only compare a column with a single value. What if we want to compare a column with multiple values? For example, we want to get all the films from the `film` table which have a rating of `PG-13` or `R`. One way to do that can be to combine multiple consitions using `OR`.  A better way will be to use the `IN` operator to compare a column with multiple values. Example:
+With comparison operators, we can only compare a column with a single value. What if we want to compare a column with multiple values? For example, we want to get all the films from the `film` table which have a rating of `PG-13` or `R`. One way to do that can be to combine multiple conditions using `OR`.  A better way will be to use the `IN` operator to compare a column with multiple values. Example:
 
 ```sql
 SELECT * FROM film WHERE rating IN ('PG-13', 'R');
